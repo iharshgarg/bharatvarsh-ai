@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Clothing Rental Manager | Rental Business Software by Bharatvarsh AI</title>
+
+    <meta name="description" content="Simplify your clothing rental business with Clothing Rental Manager by Bharatvarsh AI. Manage outfit inventory, customer bookings, billing, pending dues, and upcoming returns from one place.">
+
+    <meta name="keywords" content="Clothing Rental Manager, clothing rental software, rental management software, outfit inventory management, clothing booking software, rental billing software, Bharatvarsh AI, Surat">
+
+    <meta name="author" content="Bharatvarsh AI">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph SEO -->
+
+    <meta property="og:title" content="Clothing Rental Manager | Bharatvarsh AI">
+    <meta property="og:description" content="Manage clothing inventory, customer bookings, bills, pending dues, and upcoming returns with one simple platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bharatvarshai.com/clothing-rental-manager">
+    <meta property="og:image" content="https://img.youtube.com/vi/U-JJRX3sIF8/maxresdefault.jpg">
+
+    <!-- Twitter SEO -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clothing Rental Manager | Bharatvarsh AI">
+    <meta name="twitter:description" content="A simpler way to manage clothing rental inventory, bookings, billing, and returns.">
+    <meta name="twitter:image" content="https://img.youtube.com/vi/U-JJRX3sIF8/maxresdefault.jpg">
+
+    <!-- Canonical URL -->
+
+    <link rel="canonical" href="https://bharatvarshai.com/clothing-rental-manager">
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <!-- Performance -->
+
+    <link rel="preconnect" href="https://www.youtube-nocookie.com">
+    <link rel="preconnect" href="https://i.ytimg.com">
+
+    <style>
+
+        /* =========================
+           RESET & BASE
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 30px;
+        }
+
+        body {
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: #ffffff;
+            color: #171717;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        a:focus-visible,
+        iframe:focus-visible {
+            outline: 2px solid #444444;
+            outline-offset: 4px;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 28px 32px 24px;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .site-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+
+            padding-bottom: 22px;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 13px;
+
+            text-decoration: none;
+            min-width: 0;
+        }
+
+        .brand-logo {
+            display: block;
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .brand-name {
+            font-size: 23px;
+            font-weight: 750;
+            line-height: 1.25;
+            letter-spacing: -0.7px;
+            color: #171717;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-home {
+            font-size: 13px;
+            font-weight: 600;
+            color: #555555;
+            text-decoration: none;
+        }
+
+        .header-home:hover {
+            color: #171717;
+        }
+
+        .header-login {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 9px 16px;
+
+            border: 1px solid #222222;
+            border-radius: 6px;
+
+            background: #ffffff;
+            color: #171717;
+            font-size: 13px;
+            font-weight: 650;
+            text-decoration: none;
+
+            transition:
+                background 0.2s ease,
+                color 0.2s ease;
+        }
+
+        .header-login:hover {
+            background: #171717;
+            color: #ffffff;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            padding: 45px 0 28px;
+            max-width: 820px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            margin-bottom: 14px;
+
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.1px;
+            text-transform: uppercase;
+            color: #666666;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 4.5vw, 46px);
+            font-weight: 750;
+            letter-spacing: -1.7px;
+            line-height: 1.18;
+            margin-bottom: 16px;
+            color: #151515;
+        }
+
+        .hero p {
+            max-width: 720px;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #595959;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            margin-top: 23px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            min-height: 45px;
+            padding: 11px 18px;
+
+            border: 1px solid #222222;
+            border-radius: 6px;
+
+            font-size: 14px;
+            font-weight: 650;
+            line-height: 1.4;
+            text-decoration: none;
+
+            transition:
+                background 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .button-primary {
+            background: #171717;
+            color: #ffffff;
+        }
+
+        .button-primary:hover {
+            background: #3b3b3b;
+            border-color: #3b3b3b;
+        }
+
+        .button-secondary {
+            background: #ffffff;
+            color: #222222;
+            border-color: #e1e1e1;
+        }
+
+        .button-secondary:hover {
+            background: #f7f7f7;
+            border-color: #cfcfcf;
+        }
+
+        .button-arrow {
+            font-size: 17px;
+            line-height: 1;
+        }
+
+
+        /* =========================
+           VIDEO DEMO
+        ========================= */
+
+        .demo-section {
+            margin-top: 12px;
+        }
+
+        .video-frame {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+
+            border: 1px solid #e8e8e8;
+            border-radius: 11px;
+            background: #f5f5f5;
+        }
+
+        .video-frame iframe {
+            position: absolute;
+            inset: 0;
+
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            border: 0;
+        }
+
+        .video-caption {
+            margin-top: 11px;
+            font-size: 12.5px;
+            color: #777777;
+        }
+
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            margin-top: 37px;
+        }
+
+        .section-heading {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.7px;
+            line-height: 1.35;
+            margin-bottom: 12px;
+            color: #171717;
+        }
+
+        .section-description {
+            max-width: 760px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #595959;
+            margin-bottom: 19px;
+        }
+
+        .section-content {
+            max-width: 900px;
+        }
+
+        .section-content p {
+            font-size: 15px;
+            color: #4b4b4b;
+            line-height: 1.85;
+            margin-bottom: 12px;
+        }
+
+        .section-content p:last-child {
+            margin-bottom: 0;
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .features-section {
+            margin-top: 42px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 21px;
+        }
+
+        .feature {
+            padding: 21px;
+            border: 1px solid #e8e8e8;
+            border-radius: 9px;
+            background: #ffffff;
+
+            transition:
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .feature:hover {
+            border-color: #d4d4d4;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.035);
+            transform: translateY(-2px);
+        }
+
+        .feature-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 33px;
+            height: 33px;
+            margin-bottom: 13px;
+
+            border: 1px solid #e7e7e7;
+            border-radius: 7px;
+            background: #f7f7f7;
+
+            font-size: 12px;
+            font-weight: 700;
+            color: #444444;
+        }
+
+        .feature h3 {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            line-height: 1.5;
+            margin-bottom: 7px;
+            color: #191919;
+        }
+
+        .feature p {
+            font-size: 13.5px;
+            line-height: 1.8;
+            color: #5b5b5b;
+        }
+
+
+        /* =========================
+           BUSINESS BENEFITS
+        ========================= */
+
+        .benefits-section {
+            margin-top: 43px;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px 28px;
+            margin-top: 19px;
+        }
+
+        .benefit {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            padding: 13px 0;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .benefit-mark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+
+            width: 23px;
+            height: 23px;
+            margin-top: 2px;
+
+            border: 1px solid #e5e5e5;
+            border-radius: 50%;
+
+            font-size: 12px;
+            font-weight: 700;
+            color: #333333;
+        }
+
+        .benefit h3 {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 3px;
+            color: #222222;
+        }
+
+        .benefit p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: #666666;
+        }
+
+
+        /* =========================
+           CALL TO ACTION
+        ========================= */
+
+        .cta-section {
+            margin-top: 43px;
+            padding: 27px;
+
+            border: 1px solid #e7e7e7;
+            border-radius: 10px;
+            background: #fafafa;
+        }
+
+        .cta-section h2 {
+            font-size: 23px;
+            font-weight: 700;
+            letter-spacing: -0.6px;
+            line-height: 1.4;
+            margin-bottom: 9px;
+            color: #171717;
+        }
+
+        .cta-section p {
+            max-width: 690px;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #595959;
+        }
+
+        .cta-section .hero-actions {
+            margin-top: 18px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-section {
+            margin-top: 37px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 24px;
+            margin-top: 13px;
+        }
+
+        .contact-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+
+            font-size: 14px;
+            font-weight: 600;
+            color: #222222;
+            text-decoration: none;
+        }
+
+        .contact-links a:hover {
+            color: #777777;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px 20px;
+
+            margin-top: 39px;
+            padding-top: 18px;
+            border-top: 1px solid #eeeeee;
+
+            font-size: 12.5px;
+            color: #777777;
+        }
+
+        .footer-brand {
+            font-weight: 650;
+            color: #444444;
+        }
+
+        .footer-email {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer-email:hover {
+            color: #222222;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media (max-width: 760px) {
+
+            .container {
+                padding: 24px 25px;
+            }
+
+            .hero {
+                padding: 36px 0 24px;
+            }
+
+            .hero h1 {
+                font-size: 37px;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 13px;
+            }
+
+            .feature {
+                padding: 18px;
+            }
+
+            section {
+                margin-top: 32px;
+            }
+
+            .features-section,
+            .benefits-section,
+            .cta-section {
+                margin-top: 36px;
+            }
+
+            footer {
+                margin-top: 32px;
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 560px) {
+
+            .container {
+                padding: 19px 20px 22px;
+            }
+
+            .site-header {
+                padding-bottom: 17px;
+                gap: 10px;
+            }
+
+            .brand {
+                gap: 9px;
+            }
+
+            .brand-logo {
+                width: 39px;
+                height: 39px;
+            }
+
+            .brand-name {
+                font-size: 18px;
+                letter-spacing: -0.5px;
+            }
+
+            .header-actions {
+                gap: 12px;
+            }
+
+            .header-home {
+                display: none;
+            }
+
+            .header-login {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 30px 0 23px;
+            }
+
+            .eyebrow {
+                margin-bottom: 11px;
+                font-size: 10px;
+            }
+
+            .hero h1 {
+                font-size: 33px;
+                letter-spacing: -1px;
+                margin-bottom: 12px;
+            }
+
+            .hero p {
+                font-size: 15px;
+                line-height: 1.8;
+            }
+
+            .hero-actions {
+                gap: 10px;
+                margin-top: 19px;
+            }
+
+            .button {
+                min-height: 43px;
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+
+            .demo-section {
+                margin-top: 8px;
+            }
+
+            .video-frame {
+                border-radius: 8px;
+            }
+
+            .video-caption {
+                font-size: 11.5px;
+            }
+
+            section {
+                margin-top: 29px;
+            }
+
+            .section-heading {
+                font-size: 23px;
+                margin-bottom: 9px;
+            }
+
+            .section-description {
+                font-size: 14px;
+                margin-bottom: 14px;
+            }
+
+            .section-content p {
+                font-size: 14px;
+                line-height: 1.8;
+                margin-bottom: 11px;
+            }
+
+            .features-section,
+            .benefits-section,
+            .cta-section {
+                margin-top: 33px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 11px;
+                margin-top: 16px;
+            }
+
+            .feature {
+                padding: 18px;
+                border-radius: 8px;
+            }
+
+            .feature-number {
+                margin-bottom: 10px;
+            }
+
+            .feature h3 {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            .feature p {
+                font-size: 13.5px;
+            }
+
+            .benefits-list {
+                grid-template-columns: 1fr;
+                gap: 3px;
+                margin-top: 14px;
+            }
+
+            .benefit {
+                padding: 11px 0;
+            }
+
+            .cta-section {
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+            .cta-section h2 {
+                font-size: 21px;
+            }
+
+            .cta-section p {
+                font-size: 13.5px;
+            }
+
+            .contact-links {
+                gap: 12px 21px;
+                margin-top: 10px;
+            }
+
+            footer {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5px;
+
+                margin-top: 31px;
+                padding-top: 16px;
+                font-size: 12px;
+            }
+
+        }
+
+
+        /* =========================
+           ACCESSIBILITY
+        ========================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+                animation: none !important;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+
+        <!-- HEADER -->
+
+        <header class="site-header">
+
+            <a
+                class="brand"
+                href="/"
+                aria-label="Bharatvarsh AI homepage"
+            >
+
+                <img
+                    class="brand-logo"
+                    src="logo.png"
+                    alt="Bharatvarsh AI logo"
+                    width="48"
+                    height="48"
+                >
+
+                <span class="brand-name">Bharatvarsh AI</span>
+
+            </a>
+
+            <nav class="header-actions" aria-label="Main navigation">
+
+                <a class="header-home" href="/">
+                    Home
+                </a>
+
+                <a
+                    class="header-login"
+                    href="https://rental.bharatvarshai.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Login <span aria-hidden="true">↗</span>
+                </a>
+
+            </nav>
+
+        </header>
+
+
+        <main>
+
+            <!-- HERO -->
+
+            <section class="hero" aria-labelledby="hero-title">
+
+                <span class="eyebrow">
+                    A Bharatvarsh AI Product
+                </span>
+
+                <h1 id="hero-title">
+                    Clothing Rental Manager
+                </h1>
+
+                <p>
+                    Simplify your clothing rental business with a smarter
+                    way to manage outfits, customer bookings, billing,
+                    pending dues, and upcoming returns — all from one place.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        class="button button-primary"
+                        href="https://rental.bharatvarshai.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Get Started
+                        <span class="button-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <a class="button button-secondary" href="#demo">
+                        Watch Product Demo
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- PRODUCT DEMO VIDEO -->
+
+            <section
+                id="demo"
+                class="demo-section"
+                aria-label="Clothing Rental Manager product demonstration"
+            >
+
+                <div class="video-frame">
+
+                    <iframe
+                        src="https://www.youtube-nocookie.com/embed/U-JJRX3sIF8?si=iwx7Vh5Uqq_hPtXk"
+                        title="Clothing Rental Manager — Product Demonstration by Bharatvarsh AI"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+
+                </div>
+
+                <p class="video-caption">
+                    See how Clothing Rental Manager helps organize
+                    everyday rental business operations.
+                </p>
+
+            </section>
+
+
+            <!-- ABOUT THE PRODUCT -->
+
+            <section id="about" aria-labelledby="about-title">
+
+                <h2 class="section-heading" id="about-title">
+                    Manage Your Rental Business in One Place
+                </h2>
+
+                <div class="section-content">
+
+                    <p>
+                        Running a clothing rental business involves more
+                        than keeping track of outfits. Customer bookings,
+                        rental dates, billing, pending payments, and
+                        returns all need careful attention.
+                    </p>
+
+                    <p>
+                        Clothing Rental Manager is a practical software
+                        solution built to bring these everyday operations
+                        together in one organized platform. It helps
+                        reduce dependence on manual records and makes
+                        important business information easier to manage.
+                    </p>
+
+                    <p>
+                        Developed by Bharatvarsh AI for a clothing rental
+                        business in Surat, Gujarat, the software focuses
+                        on solving real operational challenges through
+                        simple, useful digital tools.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- FEATURES -->
+
+            <section
+                id="features"
+                class="features-section"
+                aria-labelledby="features-title"
+            >
+
+                <h2 class="section-heading" id="features-title">
+                    Everything You Need to Stay Organized
+                </h2>
+
+                <p class="section-description">
+                    Essential tools to help you keep track of inventory,
+                    bookings, payments, and rental returns without
+                    juggling separate manual records.
+                </p>
+
+                <div class="features-grid">
+
+                    <article class="feature">
+
+                        <span class="feature-number" aria-hidden="true">01</span>
+
+                        <h3>Clothing Inventory Tracking</h3>
+
+                        <p>
+                            Keep track of outfits and their rental status.
+                            Know which customer has which item and make
+                            inventory management more organized.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature">
+
+                        <span class="feature-number" aria-hidden="true">02</span>
+
+                        <h3>Booking Management</h3>
+
+                        <p>
+                            Organize customer bookings and rental
+                            schedules. Make it easier to track reservations
+                            and avoid double-booking outfits.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature">
+
+                        <span class="feature-number" aria-hidden="true">03</span>
+
+                        <h3>Billing Made Easier</h3>
+
+                        <p>
+                            Generate, download, and print bills with
+                            less manual effort, helping you maintain
+                            clearer rental transaction records.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature">
+
+                        <span class="feature-number" aria-hidden="true">04</span>
+
+                        <h3>Pending Dues Tracking</h3>
+
+                        <p>
+                            Review pending customer payments and check
+                            dues across monthly or yearly periods to
+                            keep better track of outstanding amounts.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature">
+
+                        <span class="feature-number" aria-hidden="true">05</span>
+
+                        <h3>Upcoming Pickups & Returns</h3>
+
+                        <p>
+                            Keep an eye on upcoming clothing pickups
+                            and returns so scheduled rental activities
+                            are easier to follow.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature">
+
+                        <span class="feature-number" aria-hidden="true">06</span>
+
+                        <h3>Centralized Dashboard</h3>
+
+                        <p>
+                            Bring key rental business information
+                            together in one place instead of relying
+                            entirely on scattered manual records.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- BUSINESS BENEFITS -->
+
+            <section
+                id="benefits"
+                class="benefits-section"
+                aria-labelledby="benefits-title"
+            >
+
+                <h2 class="section-heading" id="benefits-title">
+                    Built for Everyday Business Challenges
+                </h2>
+
+                <p class="section-description">
+                    Practical software should make daily work simpler,
+                    not add another layer of complexity.
+                </p>
+
+                <div class="benefits-list">
+
+                    <div class="benefit">
+
+                        <span class="benefit-mark" aria-hidden="true">✓</span>
+
+                        <div>
+                            <h3>Less Paperwork</h3>
+                            <p>
+                                Move away from relying solely on handwritten
+                                records and scattered information.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <span class="benefit-mark" aria-hidden="true">✓</span>
+
+                        <div>
+                            <h3>Better Inventory Visibility</h3>
+                            <p>
+                                Keep rental outfit information and customer
+                                allocations easier to track.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <span class="benefit-mark" aria-hidden="true">✓</span>
+
+                        <div>
+                            <h3>Simpler Billing</h3>
+                            <p>
+                                Prepare, download, and print bills
+                                through a more organized workflow.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <span class="benefit-mark" aria-hidden="true">✓</span>
+
+                        <div>
+                            <h3>More Organized Operations</h3>
+                            <p>
+                                Keep bookings, dues, and upcoming
+                                returns easier to review.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CALL TO ACTION -->
+
+            <section
+                id="get-started"
+                class="cta-section"
+                aria-labelledby="cta-title"
+            >
+
+                <h2 id="cta-title">
+                    Ready to Simplify Your Clothing Rental Business?
+                </h2>
+
+                <p>
+                    Spend less time managing scattered records and more
+                    time focusing on your customers and business.
+                    Explore Clothing Rental Manager and discover a more
+                    organized way to handle your rental operations.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a
+                        class="button button-primary"
+                        href="https://rental.bharatvarshai.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Open Clothing Rental Manager
+                        <span class="button-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <a
+                        class="button button-secondary"
+                        href="mailto:contact@bharatvarshai.com?subject=Clothing%20Rental%20Manager%20Enquiry"
+                    >
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT -->
+
+            <section
+                id="contact"
+                class="contact-section"
+                aria-labelledby="contact-title"
+            >
+
+                <h2 class="section-heading" id="contact-title">
+                    Let's Digitize Your Business
+                </h2>
+
+                <p class="section-description">
+                    Have a clothing rental business or want to learn
+                    more about our software? Get in touch with us.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:contact@bharatvarshai.com">
+                        Email <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/company/bharatvarshai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a
+                        href="https://instagram.com/bharatvarshai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram <span aria-hidden="true">↗</span>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p class="footer-brand">
+                © 2026 Bharatvarsh AI. All rights reserved.
+            </p>
+
+            <p>
+                Building practical AI products from India.
+            </p>
+
+            <p>
+                <a
+                    class="footer-email"
+                    href="mailto:contact@bharatvarshai.com"
+                >
+                    contact@bharatvarshai.com
+                </a>
+            </p>
+
+        </footer>
+
+
+    </div>
+
+
+    <!-- STRUCTURED DATA / SEO -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebPage",
+                "name": "Clothing Rental Manager",
+                "url": "https://bharatvarshai.com/clothing-rental-manager",
+                "description": "Manage clothing rental inventory, customer bookings, billing, pending dues, and upcoming returns with Clothing Rental Manager by Bharatvarsh AI.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "Bharatvarsh AI",
+                    "url": "https://bharatvarshai.com"
+                },
+                "mainEntity": {
+                    "@id": "https://bharatvarshai.com/clothing-rental-manager#software"
+                },
+                "video": {
+                    "@type": "VideoObject",
+                    "name": "Clothing Rental Manager Product Demonstration",
+                    "description": "A demonstration of Clothing Rental Manager by Bharatvarsh AI.",
+                    "thumbnailUrl": "https://img.youtube.com/vi/U-JJRX3sIF8/maxresdefault.jpg",
+                    "embedUrl": "https://www.youtube-nocookie.com/embed/U-JJRX3sIF8",
+                    "contentUrl": "https://www.youtube.com/watch?v=U-JJRX3sIF8"
+                }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://bharatvarshai.com/clothing-rental-manager#software",
+                "name": "Clothing Rental Manager",
+                "url": "https://rental.bharatvarshai.com",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "description": "A clothing rental management platform for tracking outfit inventory, managing customer bookings, preventing double-booking, generating bills, tracking pending dues, and managing upcoming pickups and returns.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Bharatvarsh AI",
+                    "url": "https://bharatvarshai.com"
+                }
+            }
+        ]
+    }
+
+    </script>
+
+</body>
+
+</html>
